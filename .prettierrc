@@ -12,5 +12,5 @@
   "bracketSameLine": true,
   "proseWrap": "preserve",
   "jsonRecursiveSort": false,
-  "printWidth": 101
+  "printWidth": 100
 }
