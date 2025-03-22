@@ -7,8 +7,8 @@ export default function Home() {
 				src='/landscape.jpg'
 				alt='Landscape'
 				className='w-full h-auto'
-				width={1600}
-				height={800}
+				width={800}
+				height={400}
 			/>
 			<div className='h-400'>Test</div>
 		</div>

@@ -2,7 +2,7 @@
 
 import React, { ReactNode, useEffect, useState } from 'react'
 
-export default function HomeScrollDetector({ children }: { children: ReactNode }) {
+export default function BackGroundScrollTransitionner({ children }: { children: ReactNode }) {
 	const [isScrolled, setIsScrolled] = useState<boolean>(false)
 
 	useEffect(() => {
