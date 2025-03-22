@@ -1,12 +1,16 @@
+import Image from 'next/image'
+
 export default function Home() {
 	return (
 		<div>
-			<main className="flex flex-col items-center mb-6">
-				Site en cours de construction...
-			</main>
-			<footer className="flex flex-wrap items-center justify-center">
-				Retrouvez nous sur instagram : @_amizia
-			</footer>
+			<Image
+				src='/landscape.jpg'
+				alt='Landscape'
+				className='w-full h-auto'
+				width={1600}
+				height={800}
+			/>
+			<div className='h-400'>Test</div>
 		</div>
 	)
 }
