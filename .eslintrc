@@ -3,7 +3,7 @@
     "react-app"
   ],
   "rules": {
-    "no-unused-vars": "off",
+    "no-unused-vars": "warn",
     "no-console": "warn",
     "array-element-newline": [
       "error",
