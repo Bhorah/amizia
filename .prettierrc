@@ -4,13 +4,12 @@
   "singleQuote": true,
   "quoteProps": "as-needed",
   "jsxSingleQuote": true,
+  "jsxBracketSameLine": true,
   "singleAttributePerLine": false,
   "trailingComma": "es5",
   "endOfLine": "auto",
   "tabWidth": 4,
   "useTabs": true,
   "bracketSameLine": true,
-  "proseWrap": "preserve",
-  "jsonRecursiveSort": false,
-  "printWidth": 100
+  "printWidth": 80
 }

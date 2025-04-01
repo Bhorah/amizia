@@ -1,9 +1,10 @@
 {
   "extends": [
-    "react-app"
+    "react-app",
+    "next"
   ],
   "rules": {
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
     "no-console": "warn",
     "array-element-newline": [
       "error",
