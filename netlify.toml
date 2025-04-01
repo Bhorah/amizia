@@ -1,0 +1,6 @@
+[[plugins]]
+	package = "@netlify/plugin-lighthouse"
+
+	[plugins.inputs.settings]
+	locale = "fr"
+
