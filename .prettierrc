@@ -3,6 +3,7 @@
   "semi": false,
   "singleQuote": true,
   "quoteProps": "as-needed",
+  "avoidEscape": true,
   "jsxSingleQuote": true,
   "singleAttributePerLine": false,
   "trailingComma": "es5",
@@ -11,6 +12,10 @@
   "useTabs": true,
   "bracketSameLine": true,
   "proseWrap": "preserve",
+  "whitespace": [
+    true,
+    "check-module"
+  ],
   "jsonRecursiveSort": false,
-  "printWidth": 100
+  "printWidth": 120
 }
