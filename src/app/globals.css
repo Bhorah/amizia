@@ -32,3 +32,11 @@ body {
 .transition-header{
     transition: all 0.3s ease-in-out;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-padding-top: 50vh; /* 50% de la hauteur de la fenêtre pour centrer l'élément */
+}
