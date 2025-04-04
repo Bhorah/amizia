@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<div>
 			<Image
-				src='/.netlify/images?url=/img/hero-banner.jpg'
+				src='/img/hero-banner.jpg'
 				alt='Landscape'
 				className='w-full h-[50em] object-cover object-center'
 				width={5472}
