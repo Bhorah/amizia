@@ -23,7 +23,7 @@ export default function Home() {
 			<div className='h-400'>Test</div>
 
 			<div id='engagements_anchor' className='-scroll-mt-80 h-[4000px] bg-red-100'>
-				ICI C'EST LES ENGAGEMENTS
+				ICI C&apos;EST LES ENGAGEMENTS
 			</div>
 		</div>
 	)
