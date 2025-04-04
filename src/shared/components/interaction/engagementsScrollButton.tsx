@@ -21,7 +21,7 @@ export default function EngagementsScrollButton() {
 			border-2 border-neutral-500 rounded-xl
 			hover:border-amizia-orange hover:bg-amizia-orange hover:text-white
 			transition-all duration-150 scroll-smooth'>
-			Nos engagements
+			Nos engagements i
 		</button>
 	)
 }
