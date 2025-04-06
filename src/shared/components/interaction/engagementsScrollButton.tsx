@@ -7,9 +7,13 @@ export default function EngagementsScrollButton() {
 			if (target) {
 				// Calculer la position pour centrer l'élément
 				const elementPosition = target.getBoundingClientRect().top + window.pageYOffset
+				const bannerHeight = document.getElementById('reactive-header')?.getBoundingClientRect().height
 
 				// Utiliser window.scrollTo pour ajuster le scroll
-				window.scrollTo({ top: elementPosition - window.innerHeight / 2, behavior: 'smooth' })
+				window.scrollTo({
+					top: elementPosition - (bannerHeight ? bannerHeight * 2 : window.innerHeight / 6),
+					behavior: 'smooth',
+				})
 			}
 		}, 50)
 	}
@@ -21,7 +25,7 @@ export default function EngagementsScrollButton() {
 			border-2 border-neutral-500 rounded-xl
 			hover:border-amizia-orange hover:bg-amizia-orange hover:text-white
 			transition-all duration-150 scroll-smooth'>
-			Nos engagements i
+			Nos engagements
 		</button>
 	)
 }

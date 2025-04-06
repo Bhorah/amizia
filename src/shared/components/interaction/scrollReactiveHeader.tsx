@@ -4,19 +4,22 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { BasicReactChildrenNode } from '@/shared/types/globals'
 
-export default function ScrollReactiveHeader({ children }: BasicReactChildrenNode) {
+export default function ScrollReactiveHeader({ children }: Readonly<BasicReactChildrenNode>) {
 	const [isScrolled, setIsScrolled] = useState<boolean>(false)
 
 	useEffect(() => {
 		const updateScrolled = () => {
 			setIsScrolled(window.scrollY > 50)
 		}
+		//Pour forcer le calcul au premier render
+		updateScrolled()
 		window.addEventListener('scroll', updateScrolled)
 		return () => window.removeEventListener('scroll', updateScrolled)
 	}, [])
 
 	return (
 		<div
+			id='reactive-header'
 			className={`${isScrolled ? 'bg-header-background' : 'bg-transparent'}
 					w-full h-28 fixed top-0 left-0 z-10
 					transition-header`}>
@@ -24,7 +27,7 @@ export default function ScrollReactiveHeader({ children }: BasicReactChildrenNod
 				<div className='relative flex align-center gap-2'>
 					{/* Logo blanc */}
 					<Image
-						src='/full-logo/white-big.png'
+						src='/logo/full-logo/white-big.png'
 						alt="Logo d'Amizia"
 						width={200}
 						height={200}
@@ -32,7 +35,7 @@ export default function ScrollReactiveHeader({ children }: BasicReactChildrenNod
 					/>
 					{/* Logo orange */}
 					<Image
-						src='/full-logo/orange-big.png'
+						src='/logo/full-logo/orange-big.png'
 						alt="Logo d'Amizia"
 						width={200}
 						height={200}

@@ -5,6 +5,7 @@
     --foreground: #171717;
     --amizia-orange: #b75e18;
     --header-background: #f5f2f2;
+    --font-lightbold: 500;
 }
 
 @theme inline {
@@ -35,8 +36,4 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  scroll-padding-top: 50vh; /* 50% de la hauteur de la fenêtre pour centrer l'élément */
 }

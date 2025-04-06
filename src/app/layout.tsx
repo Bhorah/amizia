@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import Header from '@/shared/components/layout/header'
 import Footer from '@/shared/components/layout/footer'
+import { BasicReactChildrenNode } from '@/shared/types/globals'
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 	description: 'Amizia, véritablement équestre, libre par nature.',
 }
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<BasicReactChildrenNode>) {
 	return (
 		<html lang='fr'>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
