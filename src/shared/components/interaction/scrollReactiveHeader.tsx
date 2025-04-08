@@ -33,6 +33,7 @@ export default function ScrollReactiveHeader({ children }: Readonly<BasicReactCh
 						height={200}
 						className={`transition-header ${isScrolled ? 'opacity-0' : 'opacity-100'}`}
 					/>
+
 					{/* Logo orange */}
 					<Image
 						src='/logo/full-logo/orange-big.png'
