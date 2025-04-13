@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { BasicReactChildrenNode } from '@/shared/types/globals'
+import ScrollingButton from '@/shared/components/interaction/scrollingButton'
 
 export default function ScrollReactiveHeader({ children }: Readonly<BasicReactChildrenNode>) {
 	const [isScrolled, setIsScrolled] = useState<boolean>(false)
@@ -24,7 +25,7 @@ export default function ScrollReactiveHeader({ children }: Readonly<BasicReactCh
 					w-full h-28 fixed top-0 left-0 z-10
 					transition-header`}>
 			<div className='flex justify-center w-full h-full items-center'>
-				<div className='relative flex align-center gap-2'>
+				<div className='flex w-fit h-fit relative'>
 					{/* Logo blanc */}
 					<Image
 						src='/logo/full-logo/white-big.png'
@@ -42,6 +43,8 @@ export default function ScrollReactiveHeader({ children }: Readonly<BasicReactCh
 						height={200}
 						className={`absolute transition-header ${isScrolled ? 'opacity-100' : 'opacity-0'}`}
 					/>
+
+					<ScrollingButton isVisible={false} />
 				</div>
 				{children}
 			</div>

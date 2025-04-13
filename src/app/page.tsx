@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import EngagementsScrollButton from '@/shared/components/interaction/engagementsScrollButton'
+import ScrollingButton from '@/shared/components/interaction/scrollingButton'
 
 export default function Home() {
 	return (
@@ -15,11 +15,15 @@ export default function Home() {
 			/>
 
 			{/** Bouton Engagements **/}
-			<div className='p-12 text-neutral-500 text-lg justify-items-center'>
+			<div className='p-12 text-text-gray text-lg justify-items-center'>
 				<p>Véritablement équestre. Libre par nature.</p>
 
 				<div className='mt-8 block'>
-					<EngagementsScrollButton />
+					<ScrollingButton
+						anchorElementId='engagements_anchor'
+						isVisible={true}
+						innerText='Nos engagements'
+					/>
 				</div>
 			</div>
 
@@ -51,9 +55,9 @@ export default function Home() {
 			{/** Engagements **/}
 			<div id='engagements_anchor' className='grid grid-cols-2 gap-20 items-stretch h-fit mb-30'>
 				<div className='w-full text-amizia-orange text-center flex flex-col h-full'>
-					<h2 className='text-3xl'>Nos engagements</h2>
+					<h2 className='text-3xl mb-5'>Nos engagements</h2>
 					<div className='flex-1 flex items-center'>
-						<div className='space-y-8 text-xl max-w-150 mx-auto'>
+						<div className='space-y-8 text-lg max-w-150 mx-auto'>
 							<p>
 								Amizia est née d’une passion commune pour les chevaux et d’un respect pour le
 								savoir-faire traditionnel. Nous créons des tapis uniques au designs modernes et

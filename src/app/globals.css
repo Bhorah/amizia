@@ -6,6 +6,7 @@
     --amizia-orange: #b75e18;
     --light-amizia-orange: #E29253;
     --header-background: #f5f2f2;
+  --text-gray: #707070;
     --font-lightbold: 500;
 }
 
@@ -15,6 +16,7 @@
     --color-amizia-orange: var(--amizia-orange);
     --color-light-amizia-orange: var(--light-amizia-orange);
     --color-header-background: var(--header-background);
+  --color-text-gray: var(--text-gray);
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
 }
