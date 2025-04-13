@@ -26,12 +26,12 @@ export default function ScrollingButton(props: ScrollingButtonProps) {
 	return (
 		<button
 			onClick={handleClick}
-			className={`hover:cursor-pointer ${
+			className={`${
 				props.isVisible
 					? `px-16 py-3
-			border-2 border-neutral-500 rounded-xl
+			border-2 border-neutral-500
 			hover:border-amizia-orange hover:bg-amizia-orange hover:text-white
-			transition-all duration-150 scroll-smooth`
+			transition-all duration-150`
 					: `absolute top-0 left-0 w-full h-full bg-transparent`
 			}`}>
 			{props.innerText}

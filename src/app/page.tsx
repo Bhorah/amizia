@@ -90,7 +90,7 @@ export default function Home() {
 			{
 				//Pré-footer
 			}
-			<div className='w-full h-32 bg-light-amizia-orange grid grid-cols-3 text-white text-xl text-center content-center'>
+			<div className='w-full h-32 bg-amizia-light-orange grid grid-cols-3 text-white text-xl text-center content-center'>
 				<p>Paiement sécurisé</p>
 				<p>Livraison</p>
 				<p>Un autre truc</p>

@@ -4,7 +4,7 @@
     --background: #ffffff;
     --foreground: #171717;
     --amizia-orange: #b75e18;
-    --light-amizia-orange: #E29253;
+    --amizia-light-orange: #E29253;
     --header-background: #f5f2f2;
   --text-gray: #707070;
     --font-lightbold: 500;
@@ -14,7 +14,7 @@
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --color-amizia-orange: var(--amizia-orange);
-    --color-light-amizia-orange: var(--light-amizia-orange);
+    --color-amizia-light-orange: var(--amizia-light-orange);
     --color-header-background: var(--header-background);
   --color-text-gray: var(--text-gray);
     --font-sans: var(--font-geist-sans);
@@ -41,3 +41,18 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.footer-separator {
+  width: calc(var(--spacing) * 0.5);
+  height: calc(7 / 10 * 100%);
+  background-color: var(--color-white);
+  border-radius: 0.25rem;
+}
+
+button {
+  border-radius: var(--radius-xl) /* 0.75rem = 12px */;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
