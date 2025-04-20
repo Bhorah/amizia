@@ -32,18 +32,18 @@ export default function Home() {
 				//prettier-ignore
 			}
 			<div className='h-fit w-full bg-amizia-orange text-white'>
-				<div className='grid grid-cols-3 gap-40 p-16 text-center'>
-					<div className="col-first max-w-20 sm:max-w-md md:max-w-lg lg:max-w-xl">
+				<div className='grid grid-cols-3 gap-40 py-16 justify-items-center text-center'>
+					<div className="col-first sm:max-w-sm md:max-w-md lg:max-w-lg">
               <h2 className="text-5xl tracking-wide">Qualité</h2>
               <p className="mt-6">Matériaux pensés et testés pour être resistants et respirants, alliant confort et esthétique</p>
           </div>
 
-          <div className="col-first max-w-20 sm:max-w-md md:max-w-lg lg:max-w-xl">
+          <div className="col-first sm:max-w-md md:max-w-lg lg:max-w-xl">
               <h2 className="text-5xl tracking-wide whitespace-nowrap">Authenticité</h2>
               <p className="mt-6">Produits faits main, créés et pensés depuis l&#39;artisanat marocain</p>
           </div>
 
-          <div className="col-first max-w-20 sm:max-w-md md:max-w-lg lg:max-w-xl">
+          <div className="col-first sm:max-w-md md:max-w-lg lg:max-w-xl">
               <h2 className="text-5xl tracking-wide">Évasion</h2>
               <p className="mt-6">Découverte de nouveaux matériaux, motifs et techniques, au service de l&#39;équitation</p>
           </div>
