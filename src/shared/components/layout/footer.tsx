@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import FormEmailInput from '@/shared/components/interaction/formEmailInput'
 
 export default function Footer() {
 	return (
@@ -52,19 +53,7 @@ export default function Footer() {
 				</div>
 
 				<div className='text-white w-full h-full flex flex-col justify-center items-center space-y-2'>
-					<p className='text-lg tracking-wide'>Newsletter</p>
-					<form className='flex flex-col space-y-4 items-center w-full'>
-						<input
-							className='bg-white
-							h-10 w-3/5 min-w-40
-							text-neutral-600 placeholder:text-center
-						border-neutral-400 border-1 rounded-lg'
-							placeholder='votre email...'
-						/>
-						<button type={'button'} className='w-4/10 min-w-30 h-10 bg-amizia-light-orange'>
-							Je m&#39;inscris !
-						</button>
-					</form>
+					<FormEmailInput />
 				</div>
 			</div>
 		</footer>
