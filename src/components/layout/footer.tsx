@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import FormEmailInput from '@/shared/components/interaction/formEmailInput'
+import FormEmailInput from '@/components/interaction/formEmailInput'
 
 export default function Footer() {
 	return (

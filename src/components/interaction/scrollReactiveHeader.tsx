@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { BasicReactChildrenNode } from '@/shared/types/globals'
-import ScrollingButton from '@/shared/components/interaction/scrollingButton'
+import ScrollingButton from './scrollingButton'
 
 export default function ScrollReactiveHeader({ children }: Readonly<BasicReactChildrenNode>) {
 	const [isScrolled, setIsScrolled] = useState<boolean>(false)

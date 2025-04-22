@@ -1,5 +1,5 @@
 import React from 'react'
-import ScrollReactiveHeader from '@/shared/components/interaction/scrollReactiveHeader'
+import ScrollReactiveHeader from '@/components/interaction/scrollReactiveHeader'
 
 export default function Header() {
 	return (

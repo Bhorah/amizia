@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import Header from '@/shared/components/layout/header'
-import Footer from '@/shared/components/layout/footer'
+import Header from '@/components/layout/header'
+import Footer from '@/components/layout/footer'
 import { BasicReactChildrenNode } from '@/shared/types/globals'
 
 const geistSans = Geist({

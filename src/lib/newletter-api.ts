@@ -13,7 +13,6 @@ export async function createContact(email: string) {
 			email: email,
 		}),
 	})
-
 	const data = await response.json()
 
 	if (!response.ok) {

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ScrollingButton from '@/shared/components/interaction/scrollingButton'
+import ScrollingButton from '@/components/interaction/scrollingButton'
 
 export default function Home() {
 	return (

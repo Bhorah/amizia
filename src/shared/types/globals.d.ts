@@ -11,7 +11,7 @@ export type ScrollingButtonProps = {
 }
 
 export type EmailFormState = {
-	status: 'success' | 'error' | 'pending' | undefined
+	status: 'success' | 'error' | 'neutral'
 	error?: string
 	values: {
 		email?: string

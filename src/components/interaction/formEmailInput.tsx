@@ -6,14 +6,15 @@ import { EmailFormState } from '@/shared/types/globals'
 import { CircleCheck } from 'lucide-react'
 
 const initialState: EmailFormState = {
-	status: undefined,
-	error: '',
+	status: 'neutral',
+	error: undefined,
 	values: {
 		email: '',
 	},
 }
 
 export default function FormEmailInput() {
+	// @ts-expect-error - Le submitNewsletterSignup va envoyer une erreur jsp pourquoi, mais il marche
 	const [formState, formAction, isMutating] = useActionState(submitNewsletterSignup, initialState)
 
 	//Indique s'il faut inclure l'erreur dans le DOM
@@ -32,13 +33,9 @@ export default function FormEmailInput() {
 			setIsValid(true)
 			setTimeout(() => {
 				setIsValid(false)
+				formState.status = 'neutral'
 			}, 2000)
-		}
-	}, [formState?.status])
-
-	// Affiche le message si une erreur apparaît
-	useEffect(() => {
-		if (formState?.error) {
+		} else if (formState?.status === 'error') {
 			setShowError(true)
 			setIsVisible(true)
 
@@ -49,13 +46,13 @@ export default function FormEmailInput() {
 				//Second timer au bout duquel on retire le message du DOM
 				setTimeout(() => {
 					setShowError(false)
-					formState.error = ''
+					formState.status = 'neutral'
 				}, 500)
-			}, 4000) // 4 secondes
+			}, 4000)
 
 			return () => clearTimeout(timer)
 		}
-	}, [formState?.error])
+	}, [formState?.status])
 
 	return (
 		<>
