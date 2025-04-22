@@ -78,7 +78,9 @@ export default function FormEmailInput() {
 					<button
 						type='submit'
 						disabled={isPending}
-						className={`w-fit px-5 min-w-30 h-10 ${isPending ? 'bg-amizia-disabled-orange !cursor-wait' : 'bg-amizia-light-orange'}`}>
+						className={`w-fit px-5 min-w-30 h-10
+						          ${isPending ? 'bg-amizia-disabled-orange !cursor-wait' : 'bg-amizia-light-orange'}
+						           active:bg-amizia-activated-orange active:scale-95 active:brightness-95`}>
 						Je m&#39;inscris !
 					</button>
 

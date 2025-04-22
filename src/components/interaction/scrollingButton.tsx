@@ -31,7 +31,8 @@ export default function ScrollingButton(props: ScrollingButtonProps) {
 					? `px-16 py-3
 			border-2 border-neutral-500
 			hover:border-amizia-orange hover:bg-amizia-orange hover:text-white
-			transition-all duration-150`
+			transition-all duration-150
+			active:scale-95 active:brightness-95`
 					: `absolute top-0 left-0 w-full h-full bg-transparent`
 			}`}>
 			{props.innerText}
