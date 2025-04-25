@@ -33,17 +33,17 @@ export default function Home() {
 			}
 			<div className='h-fit w-full bg-amizia-orange text-white'>
 				<div className='grid grid-cols-3 gap-40 py-16 justify-items-center text-center'>
-					<div className="col-first sm:max-w-sm md:max-w-md lg:max-w-lg">
+					<div className="col-first sm:max-w-sm md:max-w-md lg:max-w-md">
               <h2 className="text-5xl tracking-wide">Qualité</h2>
               <p className="mt-6">Matériaux pensés et testés pour être resistants et respirants, alliant confort et esthétique</p>
           </div>
 
-          <div className="col-first sm:max-w-md md:max-w-lg lg:max-w-xl">
+          <div className="col-first sm:max-w-sm md:max-w-md lg:max-w-md">
               <h2 className="text-5xl tracking-wide whitespace-nowrap">Authenticité</h2>
               <p className="mt-6">Produits faits main, créés et pensés depuis l&#39;artisanat marocain</p>
           </div>
 
-          <div className="col-first sm:max-w-md md:max-w-lg lg:max-w-xl">
+          <div className="col-first sm:max-w-sm md:max-w-md lg:max-w-md">
               <h2 className="text-5xl tracking-wide">Évasion</h2>
               <p className="mt-6">Découverte de nouveaux matériaux, motifs et techniques, au service de l&#39;équitation</p>
           </div>
@@ -53,7 +53,9 @@ export default function Home() {
 			<div className='h-400'>Test</div>
 
 			{/** Engagements **/}
-			<div id='engagements_anchor' className='grid grid-cols-2 gap-20 items-stretch h-fit mb-30'>
+			<div
+				id='engagements_anchor'
+				className='grid grid-cols-2 gap-20 items-stretch h-fit mb-30 max-w-[2200px] mx-auto'>
 				<div className='w-full text-amizia-orange text-center flex flex-col h-full'>
 					<h2 className='text-3xl mb-5'>Nos engagements</h2>
 					<div className='flex-1 flex items-center'>
@@ -84,7 +86,7 @@ export default function Home() {
 					alt='morrocan-coast-view'
 					width={1500}
 					height={800}
-					className='object-cover w-full'></Image>
+					className='object-cover w-full max-h-[600px]'></Image>
 			</div>
 
 			{
