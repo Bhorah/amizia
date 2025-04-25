@@ -22,7 +22,7 @@ export default function Home() {
 					<ScrollingButton
 						anchorElementId='engagements_anchor'
 						isVisible={true}
-						innerText='Nos engagements'
+						innerText='Découvrir la marque'
 					/>
 				</div>
 			</div>
@@ -50,7 +50,19 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className='h-400'>Test</div>
+			{/** Tapis Amizia **/}
+
+			<div className={'relative w-full'}>
+				<Image
+					src='/img/tapis_background.png'
+					alt='riding-rug-background'
+					width={500}
+					height={500}
+					className={'z-0 w-full h-[50em] object-cover object-center opacity-30 mb-24'}
+				/>
+
+				<p className={'absolute top-0 left-0 z-20 text-4xl text-neutral-800'}>Les tapis Amizia</p>
+			</div>
 
 			{/** Engagements **/}
 			<div
@@ -89,10 +101,8 @@ export default function Home() {
 					className='object-cover w-full max-h-[600px]'></Image>
 			</div>
 
-			{
-				//Pré-footer
-			}
-			<div className='w-full h-32 bg-amizia-light-orange grid grid-cols-3 text-white text-xl text-center content-center'>
+			{/** Pré-footer **/}
+			<div className='w-full h-24 bg-amizia-light-orange grid grid-cols-3 text-white text-xl text-center content-center'>
 				<p>Paiement sécurisé</p>
 				<p>Livraison</p>
 				<p>Un autre truc</p>

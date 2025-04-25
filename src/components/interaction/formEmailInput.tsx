@@ -63,6 +63,7 @@ export default function FormEmailInput() {
 					className='bg-white
 							h-10 w-3/5 min-w-40
 							text-neutral-600 placeholder:text-center
+							pl-2
 						border-neutral-400 border-1 rounded-lg'
 					placeholder='votre email...'
 				/>
