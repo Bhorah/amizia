@@ -10,6 +10,31 @@
     --header-background: #f5f2f2;
     --text-gray: #707070;
     --font-lightbold: 500;
+    --font-Sego: 'Sego';
+    --font-OPTI: 'OPTI';
+}
+
+@font-face {
+  font-family: Sego;
+  src: url("/fonts/Sego.otf") format("opentype");
+}
+
+@font-face {
+  font-family: OPTI;
+  font-weight: 400;
+  src: url("/fonts/OPTIAuvantGothic-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: OPTI;
+  font-weight: 600;
+  src: url("/fonts/OPTIAuvantGothic-DemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: OPTI;
+  font-weight: 800;
+  src: url("/fonts/OPTIAuvantGothic-Bold.otf") format("opentype");
 }
 
 @theme inline {
@@ -21,16 +46,9 @@
     --color-amizia-disabled-orange: var(--amizia-disabled-orange);
     --color-header-background: var(--header-background);
     --color-text-gray: var(--text-gray);
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+    --font-Sego: var(--font-Sego), "sans-serif";
+    --font-OPTI: var(--font-OPTI);
 }
-
-/*@media (prefers-color-scheme: dark) {*/
-/*    :root {*/
-/*        --background: #0a0a0a;*/
-/*        --foreground: #ededed;*/
-/*    }*/
-/*}*/
 
 body {
     background: var(--background);
@@ -57,6 +75,16 @@ button {
   border-radius: var(--radius-xl) /* 0.75rem = 12px */;
   &:hover{
     cursor: pointer;
+  }
+}
+
+p {
+  font-family: var(--font-OPTI);
+}
+
+.valeurs{
+  h2 {
+    font-family: var(--font-Sego), serif;
   }
 }
 
