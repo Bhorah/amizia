@@ -62,19 +62,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.transition-header{
-   @apply transition-all duration-300 ease-in-out;
-}
-
 html {
   scroll-behavior: smooth;
-}
-
-.footer-separator {
-  width: calc(var(--spacing, 1rem) * 0.5);
-  height: calc(7 / 10 * 100%);
-  background-color: var(--color-white);
-  border-radius: 0.25rem;
 }
 
 button {
@@ -92,3 +81,25 @@ p {
   @apply font-family-OPTI;
 }
 
+.footer-separator {
+  width: calc(var(--spacing, 1rem) * 0.5);
+  height: calc(7 / 10 * 100%);
+  background-color: var(--color-white);
+  border-radius: 0.25rem;
+}
+
+.word-small-gap{
+  word-spacing: 0.5rem;
+}
+
+.transition-header{
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.classicButton{
+  @apply
+  border-2 border-neutral-500
+  hover:border-amizia-orange hover:bg-amizia-orange hover:text-white
+  transition-all duration-150
+  active:scale-95 active:brightness-95
+}

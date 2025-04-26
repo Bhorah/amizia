@@ -56,7 +56,7 @@ export default function FormEmailInput() {
 
 	return (
 		<>
-			<p className='text-lg tracking-wide'>Newsletter</p>
+			<p className='text-lg tracking-wider'>Newsletter</p>
 			<form className='flex flex-col space-y-4 items-center w-full' action={formAction}>
 				<input
 					name='email'
@@ -68,12 +68,12 @@ export default function FormEmailInput() {
 					placeholder='votre email...'
 				/>
 				{formState?.error && showError && (
-					<p
+					<div
 						className={`bg-red-100 text-red-700 text-sm text-center
 						px-3 py-1 rounded-md min-w-40
 						transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
 						{formState.error}
-					</p>
+					</div>
 				)}
 				<div className='relative flex items-center'>
 					<button

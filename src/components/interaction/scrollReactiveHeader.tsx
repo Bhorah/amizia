@@ -22,7 +22,7 @@ export default function ScrollReactiveHeader({ children }: Readonly<BasicReactCh
 		<div
 			id='reactive-header'
 			className={`${isScrolled ? 'bg-header-background' : 'bg-transparent'}
-					w-full h-28 fixed top-0 left-0 z-10
+					w-full h-28 fixed top-0 left-0 z-20
 					transition-header`}>
 			<div className='flex justify-center w-full h-full items-center'>
 				<div className='flex w-fit h-fit relative'>

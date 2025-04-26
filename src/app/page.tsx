@@ -54,7 +54,7 @@ export default function Home() {
 
 			{/** Tapis Amizia **/}
 
-			<div className={'relative w-full'}>
+			<div className={'relative w-full flex justify-center'}>
 				<Image
 					src='/img/tapis_background.png'
 					alt='riding-rug-background'
@@ -63,7 +63,9 @@ export default function Home() {
 					className={'z-0 w-full h-[50em] object-cover object-center opacity-30 mb-24'}
 				/>
 
-				<p className={'absolute top-0 left-0 z-20 text-4xl text-neutral-800'}>Les tapis Amizia</p>
+				<p className={'absolute z-10 text-5xl text-neutral-800 pt-10 tracking-wide word-small-gap'}>
+					Les tapis Amizia
+				</p>
 			</div>
 
 			{/** Marque **/}
@@ -73,7 +75,7 @@ export default function Home() {
 				<div className='w-full text-amizia-orange text-center flex flex-col h-full'>
 					<h2 className='text-4xl mb-5'>Notre marque</h2>
 					<div className='flex-1 flex items-center'>
-						<div className='space-y-8 text-lg max-w-150 mx-auto'>
+						<div className='space-y-8 text-lg max-w-170 mx-auto'>
 							<p>
 								Amizia est née d’une passion commune pour les chevaux et d’un respect pour le
 								savoir-faire traditionnel. Nous créons des tapis uniques au designs modernes et
@@ -91,6 +93,9 @@ export default function Home() {
 								durables, tout en soutenant un commerce responsable et valorisant des traditions
 								textiles riches en histoire.
 							</p>
+							<button className='px-10 py-2 classicButton'>
+								<p>En savoir plus</p>
+							</button>
 						</div>
 					</div>
 				</div>
