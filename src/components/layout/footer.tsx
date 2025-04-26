@@ -6,10 +6,9 @@ export default function Footer() {
 	return (
 		<>
 			{/** Pré-footer **/}
-			<div className='w-full h-24 bg-amizia-light-orange grid grid-cols-3 text-white text-xl text-center content-center'>
-				<p>Paiement sécurisé</p>
-				<p>Livraison</p>
-				<p>Un autre truc</p>
+			<div className='w-full h-24 bg-amizia-light-orange text-white text-xl flex justify-center items-center gap-5'>
+				<p className={'word-small-gap'}>Véritablement équestre.</p>
+				<p>Libre par nature.</p>
 			</div>
 
 			<footer className='w-full h-48 bg-amizia-orange'>
