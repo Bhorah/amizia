@@ -35,7 +35,7 @@ export default function ScrollingButton(props: ScrollingButtonProps) {
 			active:scale-95 active:brightness-95`
 					: `absolute top-0 left-0 w-full h-full bg-transparent`
 			}`}>
-			{props.innerText}
+			<p>{props.innerText}</p>
 		</button>
 	)
 }

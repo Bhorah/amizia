@@ -23,18 +23,21 @@
   font-family: OPTI;
   font-weight: 400;
   src: url("/fonts/OPTIAuvantGothic-Medium.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: OPTI;
   font-weight: 600;
   src: url("/fonts/OPTIAuvantGothic-DemiBold.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: OPTI;
   font-weight: 800;
   src: url("/fonts/OPTIAuvantGothic-Bold.otf") format("opentype");
+  font-display: swap;
 }
 
 @theme inline {
@@ -46,8 +49,11 @@
     --color-amizia-disabled-orange: var(--amizia-disabled-orange);
     --color-header-background: var(--header-background);
     --color-text-gray: var(--text-gray);
-    --font-Sego: var(--font-Sego), "sans-serif";
-    --font-OPTI: var(--font-OPTI);
+
+    /* Fonts */
+    --font-family-Sego: 'Sego', sans-serif;
+    --font-family-OPTI: 'OPTI', sans-serif;
+
 }
 
 body {
@@ -57,7 +63,7 @@ body {
 }
 
 .transition-header{
-    transition: all 0.3s ease-in-out;
+   @apply transition-all duration-300 ease-in-out;
 }
 
 html {
@@ -65,26 +71,24 @@ html {
 }
 
 .footer-separator {
-  width: calc(var(--spacing) * 0.5);
+  width: calc(var(--spacing, 1rem) * 0.5);
   height: calc(7 / 10 * 100%);
   background-color: var(--color-white);
   border-radius: 0.25rem;
 }
 
 button {
-  border-radius: var(--radius-xl) /* 0.75rem = 12px */;
+  @apply rounded-xl; /* 0.75rem = 12px */;
   &:hover{
     cursor: pointer;
   }
 }
 
-p {
-  font-family: var(--font-OPTI);
+h2 {
+    font-family: var(--font-family-Sego), sans-serif;
 }
 
-.valeurs{
-  h2 {
-    font-family: var(--font-Sego), serif;
-  }
+p {
+  @apply font-family-OPTI;
 }
 

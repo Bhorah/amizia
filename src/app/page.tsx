@@ -66,12 +66,12 @@ export default function Home() {
 				<p className={'absolute top-0 left-0 z-20 text-4xl text-neutral-800'}>Les tapis Amizia</p>
 			</div>
 
-			{/** Engagements **/}
+			{/** Marque **/}
 			<div
 				id='engagements_anchor'
 				className='grid grid-cols-2 gap-20 items-stretch h-fit mb-30 max-w-[2200px] mx-auto'>
 				<div className='w-full text-amizia-orange text-center flex flex-col h-full'>
-					<h2 className='text-3xl mb-5'>Nos engagements</h2>
+					<h2 className='text-4xl mb-5'>Notre marque</h2>
 					<div className='flex-1 flex items-center'>
 						<div className='space-y-8 text-lg max-w-150 mx-auto'>
 							<p>
@@ -101,13 +101,6 @@ export default function Home() {
 					width={1500}
 					height={800}
 					className='object-cover w-full max-h-[600px]'></Image>
-			</div>
-
-			{/** Pré-footer **/}
-			<div className='w-full h-24 bg-amizia-light-orange grid grid-cols-3 text-white text-xl text-center content-center'>
-				<p>Paiement sécurisé</p>
-				<p>Livraison</p>
-				<p>Un autre truc</p>
 			</div>
 		</>
 	)
