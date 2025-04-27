@@ -103,3 +103,7 @@ p {
   transition-all duration-150
   active:scale-95 active:brightness-95
 }
+
+.valeurs-texte{
+  @apply tracking-wider;
+}

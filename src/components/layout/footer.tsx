@@ -4,7 +4,7 @@ import FormEmailInput from '@/components/interaction/formEmailInput'
 
 export default function Footer() {
 	return (
-		<>
+		<div>
 			{/** Pré-footer **/}
 			<div className='w-full h-24 bg-amizia-light-orange text-white text-xl flex justify-center items-center gap-5'>
 				<p className={'word-small-gap'}>Véritablement équestre.</p>
@@ -64,6 +64,6 @@ export default function Footer() {
 					</div>
 				</div>
 			</footer>
-		</>
+		</div>
 	)
 }
