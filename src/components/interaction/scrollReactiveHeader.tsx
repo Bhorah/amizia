@@ -6,23 +6,25 @@ import ScrollingButton from './scrollingButton'
 import { usePathname } from 'next/navigation'
 
 export default function ScrollReactiveHeader() {
-	const isHomePage = usePathname() == '/'
+	const pathname = usePathname()
+	const isHomePage = pathname === '/'
 	const [isOpaque, setIsOpaque] = useState<boolean>(!isHomePage)
 
 	useEffect(() => {
 		const updateScrolled = () => {
 			setIsOpaque(window.scrollY > 50 || !isHomePage)
 		}
+
 		//Pour forcer le calcul au premier render
 		updateScrolled()
-		window.addEventListener('scroll', updateScrolled)
+		window.addEventListener('scroll', updateScrolled, { passive: true })
 		return () => window.removeEventListener('scroll', updateScrolled)
-	}, [])
+	}, [isHomePage])
 
 	return (
 		<div
 			id='reactive-header'
-			className={`${isOpaque ? 'bg-header-background' : 'bg-transparent'}
+			className={`${isOpaque ? 'bg-header-background shadow-lg' : 'bg-transparent'}
 					${isHomePage ? 'fixed transition-header' : null} w-full h-28 top-0 left-0 z-20`}>
 			<div className='flex justify-center w-full h-full items-center'>
 				<div className='flex w-fit h-fit relative'>
