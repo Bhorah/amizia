@@ -2,15 +2,16 @@
 
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { BasicReactChildrenNode } from '@/shared/types/globals'
 import ScrollingButton from './scrollingButton'
+import { usePathname } from 'next/navigation'
 
-export default function ScrollReactiveHeader({ children }: Readonly<BasicReactChildrenNode>) {
-	const [isScrolled, setIsScrolled] = useState<boolean>(false)
+export default function ScrollReactiveHeader() {
+	const isHomePage = usePathname() == '/'
+	const [isOpaque, setIsOpaque] = useState<boolean>(!isHomePage)
 
 	useEffect(() => {
 		const updateScrolled = () => {
-			setIsScrolled(window.scrollY > 50)
+			setIsOpaque(window.scrollY > 50 || !isHomePage)
 		}
 		//Pour forcer le calcul au premier render
 		updateScrolled()
@@ -21,9 +22,8 @@ export default function ScrollReactiveHeader({ children }: Readonly<BasicReactCh
 	return (
 		<div
 			id='reactive-header'
-			className={`${isScrolled ? 'bg-header-background' : 'bg-transparent'}
-					w-full h-28 fixed top-0 left-0 z-20
-					transition-header`}>
+			className={`${isOpaque ? 'bg-header-background' : 'bg-transparent'}
+					${isHomePage ? 'fixed transition-header' : null} w-full h-28 top-0 left-0 z-20`}>
 			<div className='flex justify-center w-full h-full items-center'>
 				<div className='flex w-fit h-fit relative'>
 					{/* Logo blanc */}
@@ -31,8 +31,8 @@ export default function ScrollReactiveHeader({ children }: Readonly<BasicReactCh
 						src='/logo/full-logo/white-big.png'
 						alt="Logo d'Amizia"
 						width={200}
-						height={200}
-						className={`transition-header ${isScrolled ? 'opacity-0' : 'opacity-100'}`}
+						height={99.22}
+						className={`${isHomePage ? 'transition-header' : null} ${isOpaque ? 'opacity-0' : 'opacity-100'}`}
 					/>
 
 					{/* Logo orange */}
@@ -40,13 +40,12 @@ export default function ScrollReactiveHeader({ children }: Readonly<BasicReactCh
 						src='/logo/full-logo/orange-big.png'
 						alt="Logo d'Amizia"
 						width={200}
-						height={200}
-						className={`absolute transition-header ${isScrolled ? 'opacity-100' : 'opacity-0'}`}
+						height={99.22}
+						className={`absolute ${isHomePage ? 'transition-header' : null} ${isOpaque ? 'opacity-100' : 'opacity-0'}`}
 					/>
 
 					<ScrollingButton isVisible={false} />
 				</div>
-				{children}
 			</div>
 		</div>
 	)

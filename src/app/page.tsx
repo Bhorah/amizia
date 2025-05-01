@@ -11,8 +11,8 @@ export default function Home() {
 				src='/img/hero-banner.jpg'
 				alt='Landscape'
 				className='w-full h-[50em] object-cover object-center'
-				width={5472}
-				height={3648}
+				width={1905}
+				height={800}
 			/>
 
 			{/** Bouton Engagements **/}

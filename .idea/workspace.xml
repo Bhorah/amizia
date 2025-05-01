@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4344710-a60f-4405-89a3-a72e45dd5326" name="Changes" comment="Bouton en savoir plus marque">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/nous-contacter/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/authentication-demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b4344710-a60f-4405-89a3-a72e45dd5326" name="Changes" comment="Jsp ce qu'il s'est passé mais trkl">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/nous-contacter/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/nous-contacter/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interaction/formEmailInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/interaction/formEmailInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interaction/scrollReactiveHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/interaction/scrollReactiveHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +82,7 @@
     "nodejs_package_manager_path": "npm",
     "npm.Run Next Server.executor": "Run",
     "npm.run build.executor": "Run",
-    "npm.run dev.executor": "Run",
+    "npm.run dev.executor": "Debug",
     "npm.run start.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Bastien ROY\\AppData\\Roaming\\npm\\node_modules\\prettier",
     "project.structure.last.edited": "Modules",
@@ -206,7 +202,8 @@
       <workItem from="1745790618865" duration="1588000" />
       <workItem from="1745792266048" duration="533000" />
       <workItem from="1745792930147" duration="406000" />
-      <workItem from="1745793346474" duration="389000" />
+      <workItem from="1745793346474" duration="1814000" />
+      <workItem from="1746090668984" duration="5121000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place prod - En attente">
       <option name="closed" value="true" />
@@ -360,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745674748105</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Jsp ce qu'il s'est passé mais trkl">
+      <option name="closed" value="true" />
+      <created>1745793739485</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1745793739485</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +461,20 @@
     <MESSAGE value="Ajout des fonts qui marchent pas" />
     <MESSAGE value="Fonts qui marchent, nouveau titre engagements" />
     <MESSAGE value="Bouton en savoir plus marque" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bouton en savoir plus marque" />
+    <MESSAGE value="Jsp ce qu'il s'est passé mais trkl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jsp ce qu'il s'est passé mais trkl" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/interaction/scrollReactiveHeader.tsx</url>
+          <line>9</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
