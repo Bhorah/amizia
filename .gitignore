@@ -44,4 +44,4 @@ next-env.d.ts
 .netlify
 
 #idea
-.idea/workspace.xml
+/.idea/*

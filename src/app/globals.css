@@ -9,35 +9,6 @@
     --amizia-disabled-orange: #e8c2a6;
     --header-background: #f5f2f2;
     --text-gray: #707070;
-    --font-lightbold: 500;
-    --font-Sego: 'Sego';
-    --font-OPTI: 'OPTI';
-}
-
-@font-face {
-  font-family: Sego;
-  src: url("/fonts/Sego.otf") format("opentype");
-}
-
-@font-face {
-  font-family: OPTI;
-  font-weight: 400;
-  src: url("/fonts/OPTIAuvantGothic-Medium.otf") format("opentype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: OPTI;
-  font-weight: 600;
-  src: url("/fonts/OPTIAuvantGothic-DemiBold.otf") format("opentype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: OPTI;
-  font-weight: 800;
-  src: url("/fonts/OPTIAuvantGothic-Bold.otf") format("opentype");
-  font-display: swap;
 }
 
 @theme inline {
@@ -51,15 +22,9 @@
     --color-text-gray: var(--text-gray);
 
     /* Fonts */
-    --font-family-Sego: 'Sego', sans-serif;
-    --font-family-OPTI: 'OPTI', sans-serif;
+    --font-family-Sego: Sego, sans-serif;
+    --font-family-OPTI: OPTIAuvantGothic, sans-serif;
 
-}
-
-body {
-    background: var(--background);
-    color: var(--foreground);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -67,7 +32,7 @@ html {
 }
 
 button {
-  @apply rounded-xl; /* 0.75rem = 12px */;
+  border-radius: 0.75rem;
   &:hover{
     cursor: pointer;
   }
@@ -78,7 +43,7 @@ h2 {
 }
 
 p {
-  @apply font-family-OPTI;
+  font-family: var(--font-family-OPTI), sans-serif;
 }
 
 .footer-separator {
