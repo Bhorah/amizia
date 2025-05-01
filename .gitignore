@@ -44,4 +44,8 @@ next-env.d.ts
 .netlify
 
 #idea
-/.idea/*
+.idea/*
+!.idea/codeStyles
+!.idea/codeStyles/*
+!.idea/misc.xml
+!.idea/modules.xml
