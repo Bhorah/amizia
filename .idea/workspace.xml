@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4344710-a60f-4405-89a3-a72e45dd5326" name="Changes" comment="box-shadow sur le header">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b4344710-a60f-4405-89a3-a72e45dd5326" name="Changes" comment="correction du globals">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interaction/scrollReactiveHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/interaction/scrollReactiveHeader.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +200,7 @@
       <workItem from="1745793346474" duration="1814000" />
       <workItem from="1746090668984" duration="5777000" />
       <workItem from="1746135971749" duration="3075000" />
-      <workItem from="1746139127814" duration="654000" />
+      <workItem from="1746139127814" duration="952000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en place prod - En attente">
       <option name="closed" value="true" />
@@ -378,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746138749509</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="correction du globals">
+      <option name="closed" value="true" />
+      <created>1746139792655</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1746139792655</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +459,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Setup Prod" />
     <MESSAGE value="Mise en place prod - En attente" />
     <MESSAGE value="Conf prettier / EsLint [ignore netlify]&#10;&#10;(cherry picked from commit 87089ca76043aea72139eed806479cdffe1c44ea)" />
     <MESSAGE value="CP commit" />
@@ -476,7 +483,8 @@
     <MESSAGE value="Jsp ce qu'il s'est passé mais trkl" />
     <MESSAGE value="header adapté selon les pages" />
     <MESSAGE value="box-shadow sur le header" />
-    <option name="LAST_COMMIT_MESSAGE" value="box-shadow sur le header" />
+    <MESSAGE value="correction du globals" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction du globals" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -11,6 +11,32 @@
     --text-gray: #707070;
 }
 
+@font-face {
+  font-family: Sego;
+  src: url("/fonts/Sego.otf") format("opentype");
+}
+
+@font-face {
+  font-family: OPTI;
+  font-weight: 400;
+  src: url("/fonts/OPTIAuvantGothic-Medium.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: OPTI;
+  font-weight: 600;
+  src: url("/fonts/OPTIAuvantGothic-DemiBold.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: OPTI;
+  font-weight: 800;
+  src: url("/fonts/OPTIAuvantGothic-Bold.otf") format("opentype");
+  font-display: swap;
+}
+
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
