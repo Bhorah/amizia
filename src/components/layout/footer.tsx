@@ -14,7 +14,13 @@ export default function Footer() {
 			<footer className='w-full h-48 bg-amizia-orange'>
 				<div className='w-full h-full grid grid-cols-[1fr_auto_2fr_auto_1fr] justify-items-center'>
 					<div className='w-full h-full flex flex-col justify-center items-center -mt-4'>
-						<Image src='/logo/full-logo/white-big.png' alt="Logo d'Amizia" width={180} height={99.22} />
+						<Image
+							src='/logo/full-logo/white-big-small.png'
+							alt="Logo d'Amizia"
+							width={180}
+							height={99.22}
+							loading={'lazy'}
+						/>
 						<div className='w-fit flex gap-5'>
 							<div>
 								<a href={'https://www.instagram.com/_amizia/'} target={'_blank'}>
@@ -23,6 +29,7 @@ export default function Footer() {
 										alt={'Logo instagram'}
 										width={25}
 										height={25}
+										loading={'lazy'}
 									/>
 								</a>
 							</div>
@@ -33,6 +40,7 @@ export default function Footer() {
 										alt={'Logo fb'}
 										width={25}
 										height={25}
+										loading={'lazy'}
 									/>
 								</a>
 							</div>
@@ -43,6 +51,7 @@ export default function Footer() {
 										alt={'Logo linkedin'}
 										width={25}
 										height={25}
+										loading={'lazy'}
 									/>
 								</a>
 							</div>
