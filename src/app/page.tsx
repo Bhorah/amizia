@@ -34,21 +34,21 @@ export default function Home() {
 				<div className='grid grid-cols-3 gap-40 py-16 justify-items-center text-center valeur'>
 					<div className='col-first sm:max-w-sm md:max-w-md lg:max-w-md'>
 						<h2 className='text-5xl tracking-wide'>Qualité</h2>
-						<p className='mt-6 valeurs-texte'>
+						<p className='text-md valeurs-texte'>
 							Matériaux pensés et testés pour être resistants et respirants, alliant confort et esthétique
 						</p>
 					</div>
 
 					<div className='col-first sm:max-w-sm md:max-w-md lg:max-w-md'>
 						<h2 className='text-5xl tracking-wide whitespace-nowrap'>Authenticité</h2>
-						<p className='mt-6 valeurs-texte'>
+						<p className='text-md valeurs-texte'>
 							Produits faits main, créés et pensés depuis l&#39;artisanat marocain
 						</p>
 					</div>
 
 					<div className='col-first sm:max-w-sm md:max-w-md lg:max-w-md'>
 						<h2 className='text-5xl tracking-wide'>Évasion</h2>
-						<p className='mt-6 valeurs-texte'>
+						<p className='text-md valeurs-texte'>
 							Découverte de nouveaux matériaux, motifs et techniques, au service de l&#39;équitation
 						</p>
 					</div>
@@ -75,7 +75,7 @@ export default function Home() {
 			<div
 				id='engagements_anchor'
 				className='grid grid-cols-2 gap-20 items-stretch h-fit mb-30 max-w-[2200px] mx-auto'>
-				<div className='w-full text-amizia-orange text-center flex flex-col h-full'>
+				<div className='w-full h-full text-amizia-orange text-center flex flex-col'>
 					<h2 className='text-4xl mb-5'>Notre marque</h2>
 					<div className='flex-1 flex items-center'>
 						<div className='space-y-8 text-lg max-w-170 mx-auto'>
@@ -110,7 +110,7 @@ export default function Home() {
 					alt='morrocan-coast-view'
 					width={1500}
 					height={800}
-					className='object-cover w-full max-h-[600px]'></Image>
+					className='object-cover w-full h-full'></Image>
 			</div>
 		</>
 	)

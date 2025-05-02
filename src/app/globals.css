@@ -96,5 +96,9 @@ p {
 }
 
 .valeurs-texte{
-  @apply tracking-wider;
+  @apply tracking-wider mt-6;
+}
+
+.text-md{
+  font-size: 1rem;
 }
