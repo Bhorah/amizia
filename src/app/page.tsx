@@ -8,7 +8,7 @@ export default function Home() {
 			{/** Hero Banner **/}
 
 			<Image
-				src='/img/hero-banner.jpg'
+				src='/img/hero-banner-small.jpg'
 				alt='Landscape'
 				className='w-full h-[50em] object-cover object-center'
 				width={1905}

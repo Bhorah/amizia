@@ -4,9 +4,9 @@ import FormEmailInput from '@/components/interaction/formEmailInput'
 
 export default function Footer() {
 	return (
-		<div>
+		<div className={'text-white'}>
 			{/** Pré-footer **/}
-			<div className='w-full h-24 bg-amizia-light-orange text-white text-xl flex justify-center items-center gap-5'>
+			<div className='w-full h-24 bg-amizia-light-orange text-xl flex justify-center items-center gap-5'>
 				<p className={'word-small-gap'}>Véritablement équestre.</p>
 				<p>Libre par nature.</p>
 			</div>
@@ -53,13 +53,28 @@ export default function Footer() {
 						<div className='footer-separator'></div>
 					</div>
 
-					<p>Livraison</p>
+					<div className={'w-full max-w-[1100px] justify-items-center grid grid-cols-2 dynamic-gap pt-10'}>
+						<div>
+							<p className={'text-md'}>AMIZIA</p>
+							<div className={'mt-5 space-y-1'}>
+								<p className={'text-xs'}>Qui sommes nous ?</p>
+								<p className={'text-xs'}>Partenaires</p>
+							</div>
+						</div>
+						<div>
+							<p className={'text-md'}>INFOS PRATIQUES</p>
+							<div className={'mt-5 space-y-1'}>
+								<p className={'text-xs'}>Nous contacter</p>
+								<p className={'text-xs'}>Devenir partenaire</p>
+							</div>
+						</div>
+					</div>
 
 					<div className='flex items-center'>
 						<div className='footer-separator'></div>
 					</div>
 
-					<div className='text-white w-full h-full flex flex-col justify-center items-center space-y-2'>
+					<div className='w-full h-full flex flex-col justify-center items-center space-y-2'>
 						<FormEmailInput />
 					</div>
 				</div>
