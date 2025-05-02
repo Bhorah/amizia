@@ -13,7 +13,6 @@ export default function Home() {
 				className={`w-full h-[50em] object-cover object-center`}
 				width={1905}
 				height={800}
-				placeholder={'blur'}
 				priority
 			/>
 
