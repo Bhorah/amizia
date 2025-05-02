@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ScrollingButton from '@/components/interaction/scrollingButton'
 import Link from 'next/link'
-import heroImage from '../../public/img/hero-banner-small.jpg'
+import heroImage from '../../public/img/hero-banner-small.webp'
 
 export default function Home() {
 	return (
@@ -13,6 +13,7 @@ export default function Home() {
 				className={`w-full h-[50em] object-cover object-center`}
 				width={1905}
 				height={800}
+				placeholder={'blur'}
 				priority
 			/>
 
@@ -62,8 +63,8 @@ export default function Home() {
 				<Image
 					src='/img/tapis_background.png'
 					alt='riding-rug-background'
-					width={500}
-					height={500}
+					width={1905}
+					height={800}
 					className={'z-0 w-full h-[50em] object-cover object-center opacity-30 mb-24'}
 					loading={'lazy'}
 				/>
@@ -113,8 +114,8 @@ export default function Home() {
 				<Image
 					src={'/img/engagements.png'}
 					alt='morrocan-coast-view'
-					width={1500}
-					height={800}
+					width={912}
+					height={606}
 					className='object-cover w-full h-full'
 					loading={'lazy'}></Image>
 			</div>
