@@ -1,18 +1,20 @@
 import Image from 'next/image'
 import ScrollingButton from '@/components/interaction/scrollingButton'
 import Link from 'next/link'
+import heroImage from '../../public/img/hero-banner-small.jpg'
 
 export default function Home() {
 	return (
 		<>
 			{/** Hero Banner **/}
-
 			<Image
-				src='/img/hero-banner-small.jpg'
+				src={heroImage}
 				alt='Landscape'
-				className='w-full h-[50em] object-cover object-center'
+				className={`w-full h-[50em] object-cover object-center`}
 				width={1905}
 				height={800}
+				placeholder={'blur'}
+				priority
 			/>
 
 			{/** Bouton Engagements **/}
@@ -64,9 +66,13 @@ export default function Home() {
 					width={500}
 					height={500}
 					className={'z-0 w-full h-[50em] object-cover object-center opacity-30 mb-24'}
+					loading={'lazy'}
 				/>
 
-				<p className={'absolute z-10 text-5xl text-neutral-800 pt-10 tracking-wide word-small-gap'}>
+				<p
+					className={
+						'absolute z-10 text-5xl text-neutral-800 pt-10 tracking-wide word-small-gap drop-shadow-lg'
+					}>
 					Les tapis Amizia
 				</p>
 			</div>
@@ -110,7 +116,8 @@ export default function Home() {
 					alt='morrocan-coast-view'
 					width={1500}
 					height={800}
-					className='object-cover w-full h-full'></Image>
+					className='object-cover w-full h-full'
+					loading={'lazy'}></Image>
 			</div>
 		</>
 	)
