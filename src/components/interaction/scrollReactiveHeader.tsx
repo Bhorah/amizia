@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import ScrollingButton from './scrollingButton'
 import { usePathname } from 'next/navigation'
+import orangeLogo from '@/../public/logo/full-logo/orange-big-small.png'
+import whiteLogo from '@/../public/logo/full-logo/white-big-small.png'
 
 export default function ScrollReactiveHeader() {
 	const pathname = usePathname()
@@ -30,20 +32,22 @@ export default function ScrollReactiveHeader() {
 				<div className='flex w-fit h-fit relative'>
 					{/* Logo blanc */}
 					<Image
-						src='/logo/full-logo/white-big.png'
+						src={whiteLogo}
 						alt="Logo d'Amizia"
 						width={200}
 						height={99.22}
 						className={`${isHomePage ? 'transition-header' : null} ${isOpaque ? 'opacity-0' : 'opacity-100'}`}
+						loading={'eager'}
 					/>
 
 					{/* Logo orange */}
 					<Image
-						src='/logo/full-logo/orange-big.png'
+						src={orangeLogo}
 						alt="Logo d'Amizia"
 						width={200}
 						height={99.22}
 						className={`absolute ${isHomePage ? 'transition-header' : null} ${isOpaque ? 'opacity-100' : 'opacity-0'}`}
+						loading={'eager'}
 					/>
 
 					<ScrollingButton isVisible={false} />
