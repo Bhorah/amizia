@@ -82,7 +82,7 @@ export default function FormEmailInput() {
 						className={`w-fit px-5 min-w-30 h-10
 						          ${isPending ? 'bg-amizia-disabled-orange !cursor-wait' : 'bg-amizia-light-orange'}
 						           active:bg-amizia-activated-orange active:scale-95 active:brightness-95`}>
-						<p className={'tracking-wider text-md'}>Je m&#39;inscris !</p>
+						<p className={'tracking-almost-widest text-sm'}>Je m&#39;inscris !</p>
 					</button>
 
 					{/*Spinner*/}

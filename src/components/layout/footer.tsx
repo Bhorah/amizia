@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import FormEmailInput from '@/components/interaction/formEmailInput'
+import FooterLink from '@/components/footerLink'
 
 export default function Footer() {
 	return (
@@ -62,19 +63,35 @@ export default function Footer() {
 						<div className='footer-separator'></div>
 					</div>
 
-					<div className={'w-full max-w-[1100px] justify-items-center grid grid-cols-2 dynamic-gap pt-10'}>
+					<div className={'w-full max-w-[1100px] pt-8 justify-items-center grid grid-cols-2 dynamic-gap'}>
 						<div>
-							<p className={'text-md'}>AMIZIA</p>
-							<div className={'mt-5 space-y-1'}>
-								<p className={'text-xs'}>Qui sommes nous ?</p>
-								<p className={'text-xs'}>Partenaires</p>
+							<p className={'text-md tracking-wider'}>AMIZIA</p>
+							<div className={'mt-7 space-y-2'}>
+								<FooterLink
+									href=''
+									extraClasses={'hover:underline hover:underline-offset-4 block tracking-wider'}>
+									Qui sommes-nous ?
+								</FooterLink>
+								<FooterLink
+									href=''
+									extraClasses={'hover:underline hover:underline-offset-4 block tracking-wider'}>
+									Partenaires
+								</FooterLink>
 							</div>
 						</div>
 						<div>
-							<p className={'text-md'}>INFOS PRATIQUES</p>
-							<div className={'mt-5 space-y-1'}>
-								<p className={'text-xs'}>Nous contacter</p>
-								<p className={'text-xs'}>Devenir partenaire</p>
+							<p className={'text-md tracking-wider'}>INFOS PRATIQUES</p>
+							<div className={'mt-7 space-y-2'}>
+								<FooterLink
+									href=''
+									extraClasses={'hover:underline hover:underline-offset-4 block tracking-wider'}>
+									Nous contacter
+								</FooterLink>
+								<FooterLink
+									href=''
+									extraClasses={'hover:underline hover:underline-offset-4 block tracking-wider'}>
+									Devenir Partenaire
+								</FooterLink>
 							</div>
 						</div>
 					</div>

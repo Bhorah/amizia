@@ -104,6 +104,11 @@ p {
   font-size: 1rem;
 }
 
+.tracking-almost-widest{
+  --tw-tracking: 0.07em;
+  letter-spacing: 0.07em;
+}
+
 .dynamic-gap {
   gap: clamp(0.75rem, 2vw, 1.5rem)
 }
