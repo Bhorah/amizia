@@ -2,6 +2,8 @@ import Image from 'next/image'
 import ScrollingButton from '@/components/interaction/scrollingButton'
 import Link from 'next/link'
 import heroImage from '../../public/img/home/hero-banner-small.webp'
+import tapisBackground from '../../public/img/home/tapis_background.png'
+import engagements from '../../public/img/home/engagements-small.jpg'
 import ScrollOnPageChange from '@/components/interaction/scrollOnPageChange'
 
 export default function Home() {
@@ -59,7 +61,7 @@ export default function Home() {
 
 			<div className={'relative w-full flex justify-center'}>
 				<Image
-					src='/img/tapis_background.png'
+					src={tapisBackground}
 					alt='riding-rug-background'
 					width={1905}
 					height={800}
@@ -110,7 +112,7 @@ export default function Home() {
 				</div>
 
 				<Image
-					src={'/img/engagements-small.jpg'}
+					src={engagements}
 					alt='morrocan-coast-view'
 					width={912}
 					height={606}

@@ -14,7 +14,7 @@ export default function RootLayout({ children }: Readonly<BasicReactChildrenNode
 		<html lang='fr'>
 			<body className={'antialiased flex flex-col min-h-screen h-full'}>
 				<Header />
-				<main className={'flex-grow h-full'}>{children}</main>
+				<main className={'flex-grow'}>{children}</main>
 				<Footer />
 			</body>
 		</html>
