@@ -68,12 +68,12 @@ export default function Footer() {
 							<p className={'text-md tracking-wider'}>AMIZIA</p>
 							<div className={'mt-7 space-y-2'}>
 								<FooterLink
-									href=''
+									href='/qui-sommes-nous'
 									extraClasses={'hover:underline hover:underline-offset-4 block tracking-wider'}>
 									Qui sommes-nous ?
 								</FooterLink>
 								<FooterLink
-									href=''
+									href='/partenaires'
 									extraClasses={'hover:underline hover:underline-offset-4 block tracking-wider'}>
 									Partenaires
 								</FooterLink>
@@ -83,12 +83,12 @@ export default function Footer() {
 							<p className={'text-md tracking-wider'}>INFOS PRATIQUES</p>
 							<div className={'mt-7 space-y-2'}>
 								<FooterLink
-									href=''
+									href='/nous-contacter'
 									extraClasses={'hover:underline hover:underline-offset-4 block tracking-wider'}>
 									Nous contacter
 								</FooterLink>
 								<FooterLink
-									href=''
+									href='/devenir-partenaire'
 									extraClasses={'hover:underline hover:underline-offset-4 block tracking-wider'}>
 									Devenir Partenaire
 								</FooterLink>

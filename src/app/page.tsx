@@ -2,10 +2,12 @@ import Image from 'next/image'
 import ScrollingButton from '@/components/interaction/scrollingButton'
 import Link from 'next/link'
 import heroImage from '../../public/img/hero-banner-small.webp'
+import ScrollOnPageChange from '@/components/interaction/scrollOnPageChange'
 
 export default function Home() {
 	return (
 		<>
+			<ScrollOnPageChange />
 			{/** Hero Banner **/}
 			<Image
 				src={heroImage}
@@ -102,8 +104,8 @@ export default function Home() {
 								durables, tout en soutenant un commerce responsable et valorisant des traditions
 								textiles riches en histoire.
 							</p>
-							<Link href='/nous-contacter'>
-								<button className='px-10 py-2 classicButton'>
+							<Link href='/qui-sommes-nous'>
+								<button className='px-10 py-2 classicButton border-none'>
 									<p>En savoir plus</p>
 								</button>
 							</Link>
