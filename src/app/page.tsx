@@ -114,7 +114,7 @@ export default function Home() {
 				</div>
 
 				<Image
-					src={'/img/engagements.png'}
+					src={'/img/engagements-small.jpg'}
 					alt='morrocan-coast-view'
 					width={912}
 					height={606}
