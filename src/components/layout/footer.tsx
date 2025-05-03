@@ -2,6 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import FormEmailInput from '@/components/interaction/formEmailInput'
 import FooterLink from '@/components/footerLink'
+import facebookIcon from '../../../public/img/icons/facebook-round-white-icon.svg'
+import instaIcon from '../../../public/img/icons/instagram-white-icon.svg'
+import linkedinIcon from '../../../public/img/icons/linkedin-white-icon.svg'
 
 export default function Footer() {
 	return (
@@ -26,7 +29,7 @@ export default function Footer() {
 							<div>
 								<a href={'https://www.instagram.com/_amizia/'} target={'_blank'}>
 									<Image
-										src='/img/instagram-white-icon.svg'
+										src={instaIcon}
 										alt={'Logo instagram'}
 										width={25}
 										height={25}
@@ -36,19 +39,13 @@ export default function Footer() {
 							</div>
 							<div>
 								<a href={'https://www.facebook.com/profile.php?id=61568681446837'} target={'_blank'}>
-									<Image
-										src='/img/facebook-round-white-icon.svg'
-										alt={'Logo fb'}
-										width={25}
-										height={25}
-										loading={'lazy'}
-									/>
+									<Image src={facebookIcon} alt={'Logo fb'} width={25} height={25} loading={'lazy'} />
 								</a>
 							</div>
 							<div>
 								<a href={'https://www.linkedin.com/company/amizia'} target={'_blank'}>
 									<Image
-										src='/img/linkedin-white-icon.svg'
+										src={linkedinIcon}
 										alt={'Logo linkedin'}
 										width={25}
 										height={25}
