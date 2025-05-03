@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ScrollingButton from '@/components/interaction/scrollingButton'
 import Link from 'next/link'
-import heroImage from '../../public/img/hero-banner-small.webp'
+import heroImage from '../../public/img/home/hero-banner-small.webp'
 import ScrollOnPageChange from '@/components/interaction/scrollOnPageChange'
 
 export default function Home() {
@@ -19,16 +19,12 @@ export default function Home() {
 				priority
 			/>
 
-			{/** Bouton Engagements **/}
+			{/** Bouton Marque **/}
 			<div className='p-12 text-text-gray text-lg justify-items-center'>
 				<p>Véritablement équestre. Libre par nature.</p>
 
 				<div className='mt-8 block'>
-					<ScrollingButton
-						anchorElementId='engagements_anchor'
-						isVisible={true}
-						innerText='Découvrir la marque'
-					/>
+					<ScrollingButton anchorElementId='marque_anchor' isVisible={true} innerText='Découvrir la marque' />
 				</div>
 			</div>
 
@@ -81,7 +77,7 @@ export default function Home() {
 
 			{/** Marque **/}
 			<div
-				id='engagements_anchor'
+				id='marque_anchor'
 				className='grid grid-cols-2 gap-20 items-stretch h-fit mb-30 max-w-[2200px] mx-auto'>
 				<div className='w-full h-full text-amizia-orange text-center flex flex-col'>
 					<h2 className='text-4xl mb-5'>Notre marque</h2>

@@ -26,7 +26,7 @@ export default function ScrollReactiveHeader() {
 	return (
 		<div
 			id='reactive-header'
-			className={`${isOpaque ? 'bg-header-background shadow-lg' : 'bg-transparent'}
+			className={`${isOpaque ? 'bg-header-background shadow-md' : 'bg-transparent'}
 					${isHomePage ? 'fixed transition-header' : null} w-full h-28 top-0 left-0 z-20`}>
 			<div className='flex justify-center w-full h-full items-center'>
 				<div className='flex w-fit h-fit relative'>

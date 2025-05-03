@@ -17,3 +17,10 @@ export type EmailFormState = {
 		email?: string
 	}
 }
+
+export type PartenaireCardProps = {
+	imageUrl: string
+	imgAlt: string
+	name: string
+	description?: string
+}
