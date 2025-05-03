@@ -18,9 +18,9 @@ export type EmailFormState = {
 	}
 }
 
-export type PartenaireCardProps = {
-	imageUrl: string
-	imgAlt: string
-	name: string
-	description?: string
+export type Partenaire = {
+	NAME: string
+	IMG_URL: string
+	IMG_ALT: string
+	DESCRIPTION: string
 }

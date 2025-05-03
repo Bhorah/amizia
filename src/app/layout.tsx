@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<BasicReactChildrenNode>) {
 	return (
 		<html lang='fr'>
-			<body className={'antialiased'}>
+			<body className={'antialiased flex flex-col min-h-screen h-full'}>
 				<Header />
-				<main>{children}</main>
+				<main className={'flex-grow h-full'}>{children}</main>
 				<Footer />
 			</body>
 		</html>

@@ -5,6 +5,7 @@
     --foreground: #171717;
     --amizia-orange: #b75e18;
     --amizia-light-orange: #E29253;
+    --amizia-super-light-orange: #e1aa88;
     --amizia-activated-orange: #d57737;
     --amizia-disabled-orange: #e8c2a6;
     --header-background: #f5f2f2;
@@ -43,6 +44,7 @@
     --color-foreground: var(--foreground);
     --color-amizia-orange: var(--amizia-orange);
     --color-amizia-light-orange: var(--amizia-light-orange);
+  --color-amizia-super-light-orange: var(--amizia-super-light-orange);
     --color-amizia-activated-orange: var(--amizia-activated-orange);
     --color-amizia-disabled-orange: var(--amizia-disabled-orange);
     --color-header-background: var(--header-background);
@@ -56,6 +58,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
 }
 
 button {
